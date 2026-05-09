@@ -10,7 +10,7 @@ In this section, we will take a look at **Volume Driver Plugins in Docker**
 - There are many other volume driver plugins that allow you to create a volume on third-party solutions like Azure file storage, DigitalOcean Block Storage, Portworx, Google Compute Persistent Disks etc.
 
 
-![class-9](../../images/class9.PNG)
+![class-9](../../images/class9.png)
 
 
 - When you run a Docker container, you can choose to use a specific volume driver, such as the RexRay EBS to provision a volume from the Amazon EBS. This will create a container and attach a volume from the AWS cloud. When the container exits, your data is safe in the cloud.
@@ -20,7 +20,7 @@ $ docker run -it --name mysql --volume-driver rexray/ebs --mount src=ebs-vol,tar
 ```
 
 
-![class-10](../../images/class10.PNG)
+![class-10](../../images/class10.png)
 
 
 

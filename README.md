@@ -50,13 +50,13 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [08-Node-Selectors](docs/03-Scheduling/08-Node-Selectors.md)
   - [09-Node-Affinity](docs/03-Scheduling/09-Node-Affinity.md)
   - [10-Practice-Test-Node-Affinity](docs/03-Scheduling/10-Practice-Test-Node-Affinity.md)
-  - [11.Taints-and-Tolerations-vs-Node-Affinity](docs/03-Scheduling/11.Taints-and-Tolerations-vs-Node-Affinity.md)
+  - [11-Taints-and-Tolerations-vs-Node-Affinity](docs/03-Scheduling/11-Taints-and-Tolerations-vs-Node-Affinity.md)
   - [12-Resource-Limits](docs/03-Scheduling/12-Resource-Limits.md)
   - [13-Practice-Test-Resource-Limits](docs/03-Scheduling/13-Practice-Test-Resource-Limits.md)
   - [14-DaemonSets](docs/03-Scheduling/14-DaemonSets.md)
   - [15-Practice-Test-DaemonSets](docs/03-Scheduling/15-Practice-Test-DaemonSets.md)
   - [16-Static-Pods](docs/03-Scheduling/16-Static-Pods.md)
-  - [17-Practice-Test-StaticPods](docs/03-Scheduling/17-Practice-Test-StaticPods.md)
+  - [17-Practice-Test-Static-Pods](docs/03-Scheduling/17-Practice-Test-Static-Pods.md)
   - [18-Multiple-Schedulers](docs/03-Scheduling/18-Multiple-Schedulers.md)
   - [19-Practice-Test-Multiple-Schedulers](docs/03-Scheduling/19-Practice-Test-Multiple-Schedulers.md)
   - [20-Configuring-Kubernetes-Schedulers](docs/03-Scheduling/20-Configuring-Kubernetes-Schedulers.md)
@@ -81,18 +81,18 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [04-Commands-and-Arguments-in-Docker](docs/05-Application-Lifecycle-Management/04-Commands-and-Arguments-in-Docker.md)
   - [05-Commands-and-Arguments-in-Kubernetes](docs/05-Application-Lifecycle-Management/05-Commands-and-Arguments-in-Kubernetes.md)
   - [06-Practice-Test-Commands-and-Arguments](docs/05-Application-Lifecycle-Management/06-Practice-Test-Commands-and-Arguments.md)
-  - [07.Configure-Environment-Variables-in-Applications](docs/05-Application-Lifecycle-Management/07.Configure-Environment-Variables-in-Applications.md)
+  - [07-Configure-Environment-Variables-in-Applications](docs/05-Application-Lifecycle-Management/07-Configure-Environment-Variables-in-Applications.md)
   - [08-Configure-ConfigMaps-in-Applications](docs/05-Application-Lifecycle-Management/08-Configure-ConfigMaps-in-Applications.md)
   - [09-Practice-Test-Env-Variables](docs/05-Application-Lifecycle-Management/09-Practice-Test-Env-Variables.md)
-  - [10.Secrets](docs/05-Application-Lifecycle-Management/10.Secrets.md)
-  - [11.Practice-Test-Secrets](docs/05-Application-Lifecycle-Management/11.Practice-Test-Secrets.md)
-  - [12.Multi-Containers-PODs](docs/05-Application-Lifecycle-Management/12.Multi-Containers-PODs.md)
+  - [10-Secrets](docs/05-Application-Lifecycle-Management/10-Secrets.md)
+  - [11-Practice-Test-Secrets](docs/05-Application-Lifecycle-Management/11-Practice-Test-Secrets.md)
+  - [12-Multi-Container-Pods](docs/05-Application-Lifecycle-Management/12-Multi-Container-Pods.md)
   - [13-Practice-Test-Multi-Container-Pods](docs/05-Application-Lifecycle-Management/13-Practice-Test-Multi-Container-Pods.md)
   - [14-Multi-Container-Pods-Design-Patterns](docs/05-Application-Lifecycle-Management/14-Multi-Container-Pods-Design-Patterns.md)
-  - [15.Init-Containers](docs/05-Application-Lifecycle-Management/15.Init-Containers.md)
+  - [15-Init-Containers](docs/05-Application-Lifecycle-Management/15-Init-Containers.md)
   - [16-Practice-Test-Init-Containers](docs/05-Application-Lifecycle-Management/16-Practice-Test-Init-Containers.md)
-  - [17.Self-Healing-Applications](docs/05-Application-Lifecycle-Management/17.Self-Healing-Applications.md)
-  - [18.Download-Presentation-Deck](docs/05-Application-Lifecycle-Management/18.Download-Presentation-Deck.md)
+  - [17-Self-Healing-Applications](docs/05-Application-Lifecycle-Management/17-Self-Healing-Applications.md)
+  - [18-Download-Presentation-Deck](docs/05-Application-Lifecycle-Management/18-Download-Presentation-Deck.md)
 
 
 - [06-Cluster-Maintenance](docs/06-Cluster-Maintenance)
@@ -148,7 +148,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [02-Introduction-to-Docker-Storage](docs/08-Storage/02-Introduction-to-Docker-Storage.md)
   - [03-Storage-in-Docker](docs/08-Storage/03-Storage-in-Docker.md)
   - [04-Volume-Driver-Plugins-in-Docker](docs/08-Storage/04-Volume-Driver-Plugins-in-Docker.md)
-  - [05-Container.Storage-Interface](docs/08-Storage/05-Container.Storage-Interface.md)
+  - [05-Container-Storage-Interface](docs/08-Storage/05-Container-Storage-Interface.md)
   - [06-Volumes](docs/08-Storage/06-Volumes.md)
   - [07-Persistent-Volumes](docs/08-Storage/07-Persistent-Volumes.md)
   - [08-Persistent-Volume-Claims](docs/08-Storage/08-Persistent-Volume-Claims.md)
@@ -186,7 +186,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [23-Ingress-Annotations-and-rewrite-target](docs/09-Networking/23-Ingress-Annotations-and-rewrite-target.md)
   - [24-Practice-Test-CKA-Ingress-Net-1](docs/09-Networking/24-Practice-Test-CKA-Ingress-Net-1.md)
   - [25-Practice-Test-CKA-Ingress-Net-2](docs/09-Networking/25-Practice-Test-CKA-Ingress-Net-2.md)
-  - [26-Dowload-Presentation-Deck](docs/09-Networking/26-Dowload-Presentation-Deck.md)
+  - [26-Download-Presentation-Deck](docs/09-Networking/26-Download-Presentation-Deck.md)
 
 
 - [10-Design-and-Install-Kubernetes-Cluster](docs/10-Design-and-Install-Kubernetes-Cluster)
@@ -211,7 +211,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
 
 - [12-Troubleshooting](docs/12-Troubleshooting)
 
-  - [01-Troubelshooting-Section-Introduction](docs/12-Troubleshooting/01-Troubelshooting-Section-Introduction.md)
+  - [01-Troubleshooting-Section-Introduction](docs/12-Troubleshooting/01-Troubleshooting-Section-Introduction.md)
   - [02-Application-Failure](docs/12-Troubleshooting/02-Application-Failure.md)
   - [03-Solution-Application-Failure](docs/12-Troubleshooting/03-Solution-Application-Failure.md)
   - [04-Control-Plane-Failure](docs/12-Troubleshooting/04-Control-Plane-Failure.md)
@@ -241,15 +241,15 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [01-Introduction](docs/15-Mock-Exams/01-Introduction.md)
   - [02-Mock-Exam-1](docs/15-Mock-Exams/02-Mock-Exam-1.md)
   - [03-Mock-Exam-2](docs/15-Mock-Exams/03-Mock-Exam-2.md)
-  - [04-CKA-MockExam-2-Solution](docs/15-Mock-Exams/04-CKA-MockExam-2-Solution.md)
+  - [04-CKA-Mock-Exam-2-Solution](docs/15-Mock-Exams/04-CKA-Mock-Exam-2-Solution.md)
   - [05-Mock-Exam-3](docs/15-Mock-Exams/05-Mock-Exam-3.md)
-  - [06-CKA-MockExam-3-Solution](docs/15-Mock-Exams/06-CKA-MockExam-3-Solution.md)
+  - [06-CKA-Mock-Exam-3-Solution](docs/15-Mock-Exams/06-CKA-Mock-Exam-3-Solution.md)
 
 - [16-Ultimate-Mocks](docs/16-Ultimate-Mocks/)
 
 - [17-Tips-and-Tricks](docs/17-tips-and-tricks/)
   - [01-Server for testing network policies](docs/17-tips-and-tricks/docs/01-server-for-testing-network-policies.md)
-  - [02-Client-for-testing-network-things](docs/17-tips-and-tricks/docs/02-client--for-testing-network-things.md)
+  - [02-Client-for-testing-network-things](docs/17-tips-and-tricks/docs/02-client-for-testing-network-things.md)
 
 ## Validation
 

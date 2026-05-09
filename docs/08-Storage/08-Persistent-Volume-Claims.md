@@ -9,7 +9,7 @@ In this section, we will take a look at **Persistent Volume Claim**
 - Once the Persistent Volume Claim created, Kubernetes binds the Persistent Volumes to claim based on the request and properties set on the volume.
 
 
-![class-17](../../images/class17.PNG)
+![class-17](../../images/class17.png)
 
 - If properties not matches or Persistent Volume is not available for the Persistent Volume Claim then it will display the pending state.
 

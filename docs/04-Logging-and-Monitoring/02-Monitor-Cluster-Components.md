@@ -4,24 +4,24 @@
 In this section, we will take a look at monitoring kubernetes cluster
 
 #### How do you monitor resource consumption in kubernetes? or more importantly, what would you like to monitor?
-  ![mon](../../images/mon.PNG)
+  ![mon](../../images/mon.png)
  
 ## Heapster vs Metrics Server
 - Heapster is now deprecated and a slimmed down version was formed known as the **`metrics server`**.
 
-  ![hpms](../../images/hpms.PNG)
+  ![hpms](../../images/hpms.png)
   
 ## Metrics Server
 
-  ![ms1](../../images/ms1.PNG)
+  ![ms1](../../images/ms1.png)
 
 #### How are the metrics generated for the PODs on these nodes?
 
-  ![ca](../../images/ca.PNG)
+  ![ca](../../images/ca.png)
   
 ## Metrics Server - Getting Started
 
-  ![msg](../../images/msg.PNG)
+  ![msg](../../images/msg.png)
   
 - Clone the metric server from github repo
   ```
@@ -41,6 +41,6 @@ In this section, we will take a look at monitoring kubernetes cluster
   $ kubectl top pod
   ```
   
-  ![view](../../images/view.PNG)
+  ![view](../../images/view.png)
   
   

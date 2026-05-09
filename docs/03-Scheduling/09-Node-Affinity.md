@@ -17,7 +17,7 @@ In this section, we will talk about "Node Affinity" feature in kubernetes.
    nodeSelector:
     size: Large
   ```
-  ![ns-old](../../images/ns-old.PNG)
+  ![ns-old](../../images/ns-old.png)
   ```
   apiVersion: v1
   kind: Pod
@@ -38,7 +38,7 @@ In this section, we will talk about "Node Affinity" feature in kubernetes.
               - Large
               - Medium
   ```
-  ![na](../../images/na.PNG)
+  ![na](../../images/na.png)
   
   ```
   apiVersion: v1
@@ -59,7 +59,7 @@ In this section, we will talk about "Node Affinity" feature in kubernetes.
               values: 
               - Small
   ```
-  ![na1](../../images/na1.PNG)
+  ![na1](../../images/na1.png)
   
   ```
   apiVersion: v1
@@ -79,7 +79,7 @@ In this section, we will talk about "Node Affinity" feature in kubernetes.
               operator: Exists
   ```
   
-  ![na2](../../images/na2.PNG)
+  ![na2](../../images/na2.png)
   
 
 ## Node Affinity Types
@@ -90,13 +90,13 @@ In this section, we will talk about "Node Affinity" feature in kubernetes.
   - requiredDuringSchedulingRequiredDuringExecution
   - preferredDuringSchedulingRequiredDuringExecution
   
-  ![nat](../../images/nat.PNG)
+  ![nat](../../images/nat.png)
   
 ## Node Affinity Types States
 
-  ![nats](../../images/nats.PNG)
+  ![nats](../../images/nats.png)
   
-  ![nats1](../../images/nats1.PNG)
+  ![nats1](../../images/nats1.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/

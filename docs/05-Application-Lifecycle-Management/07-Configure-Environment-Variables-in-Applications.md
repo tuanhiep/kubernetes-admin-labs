@@ -24,11 +24,11 @@ $ docker run -e APP_COLOR=pink simple-webapp-color
      - name: APP_COLOR
        value: pink
   ```
-  ![env](../../images/env.PNG)
+  ![env](../../images/env.png)
   
 - There are other ways of setting the environment variables such as **`ConfigMaps`** and **`Secrets`**
 
-  ![cms](../../images/cms.PNG)
+  ![cms](../../images/cms.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/

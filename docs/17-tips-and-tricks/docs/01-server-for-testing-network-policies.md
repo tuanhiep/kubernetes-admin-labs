@@ -91,5 +91,4 @@ The following simulates a pod found in one of the Killer.sh network policy quest
 
 ## See also
 
-See also [client for testing](./02-client--for-testing-network-things.md)
-
+See also [client for testing](./02-client-for-testing-network-things.md)

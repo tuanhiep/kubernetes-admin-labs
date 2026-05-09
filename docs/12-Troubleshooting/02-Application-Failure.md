@@ -10,7 +10,7 @@
     curl http://web-service-ip:node-port
     ```
 
-    ![app](../../images/app.PNG)
+    ![app](../../images/app.png)
 
   - To check the endpoint of the service and compare it with the selectors
 
@@ -18,7 +18,7 @@
     kubectl describe service web-service
     ```   
 
-    ![svc](../../images/svc.PNG)
+    ![svc](../../images/svc.png)
 
 
   - To check the status and logs of the pod
@@ -41,7 +41,7 @@
     kubectl logs web -f --previous
     ```
     
-    ![db](../../images/db.PNG)
+    ![db](../../images/db.png)
 
 
   #### Hands on Labs

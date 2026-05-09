@@ -7,22 +7,22 @@
 #### At any time, kubernetes supports only up to the recent 3 minor versions
 - The recommended approach is to upgrade one minor version at a time.
   
-  ![up2](../../images/up2.PNG)
+  ![up2](../../images/up2.png)
   
 #### Options to upgrade k8s cluster
  
-  ![opt](../../images/opt.PNG)
+  ![opt](../../images/opt.png)
   
 ## Upgrading a Cluster
 - Upgrading a cluster involves 2 major steps
   
 #### There are different strategies that are available to upgrade the worker nodes
 - One is to upgrade all at once. But then your pods will be down and users will not be able to access the applications.
-  ![stg1](../../images/stg1.PNG)
+  ![stg1](../../images/stg1.png)
 - Second one is to upgrade one node at a time. 
-  ![stg2](../../images/stg2.PNG)
+  ![stg2](../../images/stg2.png)
 - Third one would be to add new nodes to the cluster
-  ![stg3](../../images/stg3.PNG)
+  ![stg3](../../images/stg3.png)
   
 ## kubeadm - Upgrade master node
 - kubeadm has an upgrade command that helps in upgrading clusters.
@@ -44,7 +44,7 @@
   $ kubectl get nodes
   ```
   
-  ![kubeu](../../images/kubeu.PNG)
+  ![kubeu](../../images/kubeu.png)
   
 - Upgrade 'kubelet' on the master node
   ```
@@ -59,7 +59,7 @@
   $ kubectl get nodes
   ```
   
-  ![kubeu1](../../images/kubeu1.PNG)
+  ![kubeu1](../../images/kubeu1.png)
  
 ## kubeadm - Upgrade worker nodes
   
@@ -85,11 +85,11 @@
   $ kubectl uncordon node-1
   ```
   
-  ![kubeu2](../../images/kubeu2.PNG)
+  ![kubeu2](../../images/kubeu2.png)
   
 - Upgrade all worker nodes in the same way
 
-  ![kubeu3](../../images/kubeu3.PNG)
+  ![kubeu3](../../images/kubeu3.png)
   
 
 #### Demo Video on [Cluster Upgrade](https://kodekloud.com/topic/demo-cluster-upgrade/)

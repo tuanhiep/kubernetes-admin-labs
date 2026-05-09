@@ -10,17 +10,17 @@ In this section, we will take a look at kube-controller-manager.
 ## Node Controller
    - Responsible for monitoring the state of the Nodes and taking necessary actions to keep the application running. 
   
-   ![node-controller](../../images/node-controller.PNG)
+   ![node-controller](../../images/node-controller.png)
    
 ## Replication Controller
    - It is responsible for monitoring the status of replicasets and ensuring that the desired number of pods are available at all time within the set.
    
-   ![replication-controller](../../images/replication-controller.PNG)
+   ![replication-controller](../../images/replication-controller.png)
    
 ## Other Controllers
    - There are many more such controllers available within kubernetes
      
-   ![other-controllers](../../images/other-controllers.PNG)
+   ![other-controllers](../../images/other-controllers.png)
    
    
   ## Installing Kube-Controller-Manager
@@ -33,34 +33,34 @@ In this section, we will take a look at kube-controller-manager.
     ```
     $ cat /etc/systemd/system/kube-controller-manager.service
     ```
-    ![kube-controller-manager](../../images/kube-controller-manager.PNG)
+    ![kube-controller-manager](../../images/kube-controller-manager.png)
     
 ## View kube-controller-manager - kubeadm
 - kubeadm deploys the kube-controller-manager as a pod in kube-system namespace
   ```
   $ kubectl get pods -n kube-system
   ```
-  ![kube-controller-manager0](../../images/kube-controller-manager0.PNG)
+  ![kube-controller-manager0](../../images/kube-controller-manager0.png)
   
 ## View kube-controller-manager options - kubeadm
 - You can see the options within the pod located at **`/etc/kubernetes/manifests/kube-controller-manager.yaml`**
   ```
   $ cat /etc/kubernetes/manifests/kube-controller-manager.yaml
   ```
-  ![kube-controller-manager1](../../images/kube-controller-manager1.PNG)
+  ![kube-controller-manager1](../../images/kube-controller-manager1.png)
   
 ## View kube-controller-manager options - Manual
 - In a non-kubeadm setup, you can inspect the options by viewing the **`kube-controller-manager.service`**
   ```
   $ cat /etc/systemd/system/kube-controller-manager.service
   ```
-  ![kube-controller-manager2](../../images/kube-controller-manager2.PNG)
+  ![kube-controller-manager2](../../images/kube-controller-manager2.png)
   
 - You can also see the running process and effective options by listing the process on master node and searching for kube-controller-manager.
   ```
   $ ps -aux | grep kube-controller-manager
   ```
-  ![kube-controller-manager3](../../images/kube-controller-manager3.PNG)
+  ![kube-controller-manager3](../../images/kube-controller-manager3.png)
   
 K8s Reference Docs:
 - https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/

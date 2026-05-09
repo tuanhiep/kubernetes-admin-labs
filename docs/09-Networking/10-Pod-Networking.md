@@ -55,7 +55,7 @@ $ ip addr add 10.244.2.1/24 dev v-net-0
 $ ip addr add 10.244.3.1/24 dev v-net-0
 ```
 
-![net-11](../../images/net11.PNG)
+![net-11](../../images/net11.png)
 
 - Check the reachability 
 
@@ -93,12 +93,12 @@ $ ip route add 10.244.2.2 via 192.168.1.12
 
 - Add a single large network 
 
-![net-12](../../images/net12.PNG)
+![net-12](../../images/net12.png)
 
 
 ## Container Network Interface
 
-![net-13](../../images/net13.PNG)
+![net-13](../../images/net13.png)
 
 
 

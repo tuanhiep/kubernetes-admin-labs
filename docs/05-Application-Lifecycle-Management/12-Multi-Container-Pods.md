@@ -5,11 +5,11 @@ In this section, we will take a look at multi-container pods
 
 ## Monolith and Microservices
 
-  ![loga](../../images/loga.PNG)
+  ![loga](../../images/loga.png)
   
 #### Multi-Container Pods
 
-  ![mcp](../../images/mcp.PNG)
+  ![mcp](../../images/mcp.png)
   
 - To create a new multi-container pod, add the new container information to the pod definition file.
   ```
@@ -28,7 +28,7 @@ In this section, we will take a look at multi-container pods
     - name: log-agent
       image: log-agent
   ```
-  ![mcpc](../../images/mcpc.PNG)
+  ![mcpc](../../images/mcpc.png)
  
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/

@@ -17,7 +17,7 @@ In this section, we will take a look at Node Selectors in Kubernetes
    nodeSelector:
     size: Large
   ```
-![nsel](../../images/nsel.PNG)
+![nsel](../../images/nsel.png)
   
 - To label nodes
 
@@ -30,7 +30,7 @@ In this section, we will take a look at Node Selectors in Kubernetes
   $ kubectl label nodes node-1 size=Large
   ```
   
-![ln](../../images/ln.PNG)
+![ln](../../images/ln.png)
   
 - To create a pod definition
   ```
@@ -49,12 +49,12 @@ In this section, we will take a look at Node Selectors in Kubernetes
   $ kubectl create -f pod-definition.yml
   ```
   
-![nsel](../../images/nsel.PNG)
+![nsel](../../images/nsel.png)
   
 ## Node Selector - Limitations
 - We used a single label and selector to achieve our goal here. But what if our requirement is much more complex.
   
-![nsl](../../images/nsl.PNG)
+![nsl](../../images/nsl.png)
  
 - For this we have **`Node Affinity and Anti Affinity`**
   

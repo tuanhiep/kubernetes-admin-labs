@@ -17,7 +17,7 @@ $ ip link
 $ ip addr
 ```
 
-![net-14](../../images/net14.PNG)
+![net-14](../../images/net14.png)
 
 ## Routing
 
@@ -38,7 +38,7 @@ $ ip route list
 $ ip route add 192.168.1.0/24 via 192.168.2.1
 ```
 
-![net-15](../../images/net15.PNG)
+![net-15](../../images/net15.png)
 
 ## Gateways
 

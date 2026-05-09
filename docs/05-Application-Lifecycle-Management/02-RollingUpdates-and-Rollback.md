@@ -5,7 +5,7 @@ In this section, we will take a look at rolling updates and rollback in a deploy
 
 ## Rollout and Versioning in a Deployment
 
-  ![rollv](../../images/rollv.PNG)
+  ![rollv](../../images/rollv.png)
   
 ## Rollout commands
 - You can see the status of the rollout by the below command
@@ -17,14 +17,14 @@ In this section, we will take a look at rolling updates and rollback in a deploy
   $ kubectl rollout history deployment/myapp-deployment
   ```
  
-  ![rollc](../../images/rollc.PNG)
+  ![rollc](../../images/rollc.png)
   
 ## Deployment Strategies
 - There are 2 types of deployment strategies
   1. Recreate
   2. RollingUpdate (Default Strategy)
   
-  ![dst](../../images/dst.PNG)
+  ![dst](../../images/dst.png)
   
 ## kubectl apply
 - To update a deployment, edit the deployment and make necessary changes and save it. Then run the below command.
@@ -58,19 +58,19 @@ In this section, we will take a look at rolling updates and rollback in a deploy
   ```
   $ kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
   ```
-  ![ka](../../images/ka.PNG)
+  ![ka](../../images/ka.png)
   
 ## Recreate vs RollingUpdate
   
-  ![rcrl](../../images/rcrl.PNG)
+  ![rcrl](../../images/rcrl.png)
   
 ## Upgrades
 
-  ![up](../../images/up.PNG)
+  ![up](../../images/up.png)
   
 ## Rollback
   
-  ![rb](../../images/rb.PNG)
+  ![rb](../../images/rb.png)
   
 - To undo a change
   ```
@@ -93,7 +93,7 @@ $ kubectl rollout history deployment/myapp-deployment
 $ kubectl rollout undo deployment/myapp-deployment
 ```
 
-![sum](../../images/sum.PNG)
+![sum](../../images/sum.png)
  
 #### K8s Reference Docs
 - https://kubernetes.io/docs/concepts/workloads/controllers/deployment

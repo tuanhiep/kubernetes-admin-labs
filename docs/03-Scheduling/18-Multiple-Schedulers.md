@@ -6,18 +6,18 @@ In this section, we will take a look at multiple schedulers
 ## Custom Schedulers
 - Your kubernetes cluster can schedule multiple schedulers at the same time.
 
-  ![ms](../../images/ms.PNG)
+  ![ms](../../images/ms.png)
   
 ## Deploy additional scheduler
 - Download the binary
   ```
   $ wget https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kube-scheduler
   ```
-  ![das](../../images/das.PNG)
+  ![das](../../images/das.png)
   
 ## Deploy additional scheduler - kubeadm
    
-  ![dask](../../images/dask.PNG)
+  ![dask](../../images/dask.png)
   
   - To create a scheduler pod
     ```
@@ -59,14 +59,14 @@ In this section, we will take a look at multiple schedulers
   ```
   $ kubectl get events
   ```
-  ![cs1](../../images/cs1.PNG)
+  ![cs1](../../images/cs1.png)
   
 ## View Scheduler Logs
 - To view scheduler logs
   ```
   $ kubectl logs my-custom-scheduler -n kube-system
   ```
-  ![cs2](../../images/cs2.PNG)
+  ![cs2](../../images/cs2.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/

@@ -6,7 +6,7 @@ In this section, we will talk about kube-apiserver in kubernetes
 #### Kube-apiserver is the primary component in kubernetes.
 - Kube-apiserver is responsible for **`authenticating`**, **`validating`** requests, **`retrieving`** and **`Updating`** data in ETCD key-value store. In fact kube-apiserver is the only component that interacts directly to the etcd datastore. The other components such as kube-scheduler, kube-controller-manager and kubelet uses the API-Server to update in the cluster in their respective areas.
   
-  ![post](../../images/post.PNG)
+  ![post](../../images/post.png)
   
 ## Installing kube-apiserver
 
@@ -16,7 +16,7 @@ In this section, we will talk about kube-apiserver in kubernetes
     $ wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-apiserver
     ```
  
- ![kube-apiserver](../../images/kube-apiserver.PNG)
+ ![kube-apiserver](../../images/kube-apiserver.png)
  
 ## View kube-apiserver - Kubeadm
 - kubeadm deploys the kube-apiserver as a pod in kube-system namespace on the master node.
@@ -24,7 +24,7 @@ In this section, we will talk about kube-apiserver in kubernetes
   $ kubectl get pods -n kube-system
   ```
    
-  ![kube-apiserver1](../../images/kube-apiserver1.PNG)
+  ![kube-apiserver1](../../images/kube-apiserver1.png)
    
 ## View kube-apiserver options - Kubeadm
 - You can see the options with in the pod definition file located at **`/etc/kubernetes/manifests/kube-apiserver.yaml`**
@@ -32,7 +32,7 @@ In this section, we will talk about kube-apiserver in kubernetes
   $ cat /etc/kubernetes/manifests/kube-apiserver.yaml
   ```
   
-  ![kube-apiserver2](../../images/kube-apiserver2.PNG)
+  ![kube-apiserver2](../../images/kube-apiserver2.png)
    
 ## View kube-apiserver options - Manual
 - In a Non-kubeadm setup, you can inspect the options by viewing the kube-apiserver.service
@@ -40,13 +40,13 @@ In this section, we will talk about kube-apiserver in kubernetes
   $ cat /etc/systemd/system/kube-apiserver.service
   ```
   
-  ![kube-apiserver3](../../images/kube-apiserver3.PNG)
+  ![kube-apiserver3](../../images/kube-apiserver3.png)
    
 - You can also see the running process and effective options by listing the process on master node and searching for kube-apiserver.
   ```
   $ ps -aux | grep kube-apiserver
   ```
-  ![kube-apiserver4](../../images/kube-apiserver4.PNG)
+  ![kube-apiserver4](../../images/kube-apiserver4.png)
 
 K8s Reference Docs:
 - https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/

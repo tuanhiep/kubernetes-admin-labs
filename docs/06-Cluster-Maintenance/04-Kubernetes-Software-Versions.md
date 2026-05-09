@@ -7,7 +7,7 @@ In this section, we will take a look at various kubernetes releases and versions
 ```
 $ kubectl get nodes
 ```
-![kgn](../../images/kgn.PNG)
+![kgn](../../images/kgn.png)
 
 #### Let's take a closer look at the version number
 - It consists of 3 parts
@@ -15,18 +15,18 @@ $ kubectl get nodes
   - Second is the minor version
   - Finally, the patch version
   
-  ![mmp](../../images/mmp.PNG)
+  ![mmp](../../images/mmp.png)
   
 #### Kubernetes follows a standard software release versioning procedure
 - You can find all kubernetes releases at https://github.com/kubernetes/kubernetes/releases
 
-  ![r1](../../images/r1.PNG)
+  ![r1](../../images/r1.png)
   
-  ![r2](../../images/r2.PNG)
+  ![r2](../../images/r2.png)
   
 #### Downloaded package has all the kubernetes components in it except **`ETCD Cluster`** and **`CoreDNS`** as they are seperate projects.
 
- ![r3](../../images/r3.PNG)
+ ![r3](../../images/r3.png)
  
 #### References
 

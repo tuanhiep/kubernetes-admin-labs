@@ -7,9 +7,9 @@ In this section, we will take a look at TLS in kubernetes
 - Server Certificates for Servers
 - Client Certificates for Clients
 
-  ![tls](../../images/tls.PNG)
+  ![tls](../../images/tls.png)
   
 #### Let's look at the different components within the k8s cluster and identify the various servers and clients and who talks to whom.
 
-  ![certs](../../images/certs.PNG)
+  ![certs](../../images/certs.png)
   

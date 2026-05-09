@@ -13,7 +13,7 @@ In this section, we will take a look at configuring configmaps in applications
     $ kubectl create configmap app-config --from-literal=APP_COLOR=blue --from-literal=APP_MODE=prod
     $ kubectl create configmap app-config --from-file=app_config.properties (Another way)
     ```
-    ![cmi](../../images/cmi.PNG)
+    ![cmi](../../images/cmi.png)
     
   - The Declarative way
     
@@ -30,7 +30,7 @@ In this section, we will take a look at configuring configmaps in applications
     Create a config map definition file and run the 'kubectl create` command to deploy it.
     $ kubectl create -f config-map.yaml
     ```
-    ![cmd1](../../images/cmd1.PNG)
+    ![cmd1](../../images/cmd1.png)
     
  ## View ConfigMaps
  - To view configMaps
@@ -43,7 +43,7 @@ In this section, we will take a look at configuring configmaps in applications
    $ kubectl describe configmaps
    ```
    
-   ![cmv](../../images/cmv.PNG)
+   ![cmv](../../images/cmv.png)
    
  ## ConfigMap in Pods
  - Inject configmap in pod
@@ -75,13 +75,13 @@ In this section, we will take a look at configuring configmaps in applications
    $ kubectl create -f pod-definition.yaml
    ```
   
-   ![cmp](../../images/cmp.PNG)
+   ![cmp](../../images/cmp.png)
    
  #### There are other ways to inject configuration variables into pod   
  - You can inject it as a **`Single Environment Variable`** 
  - You can inject it as a file in a **`Volume`**
  
-   ![cmp1](../../images/cmp1.PNG)
+   ![cmp1](../../images/cmp1.png)
    
  #### K8s Reference Docs
  - https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/

@@ -5,7 +5,7 @@ In this section, we will take a look at OS upgrades.
 
 #### If the node was down for more than 5 minutes, then the pods are terminated from that node
 
-  ![os](../../images/os.PNG)
+  ![os](../../images/os.png)
   
 - You can purposefully **`drain`** the node of all the workloads so that the workloads are moved to other nodes.
   ```
@@ -18,7 +18,7 @@ In this section, we will take a look at OS upgrades.
   ```
 - There is also another command called cordon. Cordon simply marks a node unschedulable. Unlike drain it does not terminate or move the pods on an existing node.
 
-  ![drain](../../images/drain.PNG)
+  ![drain](../../images/drain.png)
   
   
 #### K8s Reference Docs

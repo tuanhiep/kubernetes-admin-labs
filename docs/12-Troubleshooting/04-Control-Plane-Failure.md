@@ -22,11 +22,11 @@
     kubectl get pods -n kube-system
     ```
 
-    ![node](../../images/node.PNG)
+    ![node](../../images/node.png)
 
   - If the Control Plane components are deployed as services then check the status of all the components
 
-    ![cp](../../images/cp.PNG)
+    ![cp](../../images/cp.png)
 
   - To check the status of **`kube-apiserver`** 
 
@@ -46,7 +46,7 @@
     service kube-scheduler status
     ```
 
-    ![cp1](../../images/cp1.PNG)
+    ![cp1](../../images/cp1.png)
 
   - To check the status of **`kubelet`** 
 
@@ -66,7 +66,7 @@
     kubectl logs kube-apiserver-master -n kube-system
     ```
 
-    ![logs](../../images/logs.PNG)
+    ![logs](../../images/logs.png)
 
   - To check the logs of the Control Plane components deployed as SystemD Service
 

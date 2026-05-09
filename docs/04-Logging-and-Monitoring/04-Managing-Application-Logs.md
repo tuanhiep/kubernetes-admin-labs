@@ -5,9 +5,9 @@ In this section, we will take a look at managing application logs
 
 #### Let us start with logging in docker
 
-![ld](../../images/ld.PNG)
+![ld](../../images/ld.png)
  
-![ld1](../../images/ld1.PNG)
+![ld1](../../images/ld1.png)
  
 #### Logs - Kubernetes
 ```
@@ -32,7 +32,7 @@ spec:
   $ kubectl logs -f even-simulator-pod event-simulator
   ```
 
-  ![logs1](../../images/logs1.PNG)
+  ![logs1](../../images/logs1.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/blog/2015/06/cluster-level-logging-with-kubernetes/

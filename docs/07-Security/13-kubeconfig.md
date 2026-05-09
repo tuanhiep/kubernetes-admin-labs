@@ -7,7 +7,7 @@ In this section, we will take a look at kubeconfig in kubernetes
 #### Client uses the certificate file and key to query the kubernetes Rest API for a list of pods using curl.
 - You can specify the same using kubectl
 
-  ![kc1](../../images/kc1.PNG)
+  ![kc1](../../images/kc1.png)
   
 - We can move these information to a configuration file called kubeconfig. And the specify this file as the kubeconfig option in the command.
   ```
@@ -20,9 +20,9 @@ In this section, we will take a look at kubeconfig in kubernetes
   - Contexts
   - USers
   
-  ![kc4](../../images/kc4.PNG)
+  ![kc4](../../images/kc4.png)
   
-  ![kc5](../../images/kc5.PNG)
+  ![kc5](../../images/kc5.png)
   
 - To view the current file being used
   ```
@@ -33,7 +33,7 @@ In this section, we will take a look at kubeconfig in kubernetes
   $ kubectl config veiw --kubeconfig=my-custom-config
   ```
   
-  ![kc6](../../images/kc6.PNG)
+  ![kc6](../../images/kc6.png)
   
 - How do you update your current context? Or change the current context
   ```
@@ -42,26 +42,26 @@ In this section, we will take a look at kubeconfig in kubernetes
   $ kubectl config use-context prod-user@production
   ```
   
-  ![kc7](../../images/kc7.PNG)
+  ![kc7](../../images/kc7.png)
   
 - kubectl config help
   ```
   $ kubectl config -h
   ```
   
-  ![kc8](../../images/kc8.PNG)
+  ![kc8](../../images/kc8.png)
   
 ## What about namespaces?
 
-  ![kc9](../../images/kc9.PNG)
+  ![kc9](../../images/kc9.png)
  
 ## Certificates in kubeconfig
 
-  ![kc10](../../images/kc10.PNG)
+  ![kc10](../../images/kc10.png)
  
-  ![kc12](../../images/kc12.PNG)
+  ![kc12](../../images/kc12.png)
   
-  ![kc11](../../images/kc11.PNG)
+  ![kc11](../../images/kc11.png)
  
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/

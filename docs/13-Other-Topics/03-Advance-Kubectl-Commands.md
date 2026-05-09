@@ -12,7 +12,7 @@
     kubectl get pods -o json 
     ```
 
-    ![pod](../../images/jpod.PNG)
+    ![pod](../../images/jpod.png)
 
   - To get the image name used by pod via json path query:
 
@@ -26,7 +26,7 @@
     kubectl get pods -o=jsonpath='{.items[*].metadata.name}'
     ```
 
-    ![node](../../images/jnode.PNG)
+    ![node](../../images/jnode.png)
 
 
   - To get the architecture of node in the cluster:
@@ -49,7 +49,7 @@
     kubectl get nodes -o=custom-columns=NODE:.metadata.name ,CPU:.status.capacity.cpu
     ```
     
-    ![loop](../../images/loop.PNG)
+    ![loop](../../images/loop.png)
 
   - Kubectl comes with a **`sort by`** property which can be combined with json path query to **`sort`** by name or **`CPU count`**
 
@@ -57,7 +57,7 @@
     kubectl get nodes --sort-by=.metadata.name
     ```
 
-    ![loop](../../images/loop.PNG)
+    ![loop](../../images/loop.png)
 
     ```
     kubectl get nodes --sort-by=..status.capacity.cpu

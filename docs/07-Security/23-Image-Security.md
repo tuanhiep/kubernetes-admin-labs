@@ -16,9 +16,9 @@ In this section we will take a look at image security
       image: nginx
   ```
   
-  ![img1](../../images/img1.PNG)
+  ![img1](../../images/img1.png)
   
-  ![img2](../../images/img2.PNG)
+  ![img2](../../images/img2.png)
   
 # Private Registry
 - To login to the registry
@@ -30,7 +30,7 @@ In this section we will take a look at image security
   $ docker run private-registry.io/apps/internal-app
   ```
   
-  ![prvr](../../images/prvr.PNG)
+  ![prvr](../../images/prvr.png)
   
 - To pass the credentials to the docker untaged on the worker node for that we first create a secret object with credentials in it.
   ```
@@ -53,7 +53,7 @@ In this section we will take a look at image security
     imagePullSecrets:
     - name: regcred
   ```
-  ![prvr1](../../images/prvr1.PNG)
+  ![prvr1](../../images/prvr1.png)
   
   #### K8s Reference Docs
   - https://kubernetes.io/docs/concepts/containers/images/

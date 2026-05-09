@@ -11,7 +11,7 @@ In this section, we will take a look at authorization in kubernetes
   $ kubectl delete node worker-2
   ```
   
-  ![at1](../../images/at1.PNG)
+  ![at1](../../images/at1.png)
   
 ## Authorization Mechanisms
 - There are different authorization mechanisms supported by kubernetes
@@ -26,24 +26,24 @@ In this section, we will take a look at authorization in kubernetes
   
 ## ABAC
 
-  ![abac](../../images/abac.PNG)
+  ![abac](../../images/abac.png)
   
 ## RBAC
 
-  ![rbac](../../images/rbac.PNG)
+  ![rbac](../../images/rbac.png)
 
 ## Webhook
   
-  ![webhook](../../images/webhook.PNG)
+  ![webhook](../../images/webhook.png)
   
 ## Authorization Modes
 - The mode options can be defined on the kube-apiserver
 
-  ![mode](../../images/mode.PNG)
+  ![mode](../../images/mode.png)
   
 - When you specify multiple modes, it will authorize in the order in which it is specified
 
-  ![mode1](../../images/mode1.PNG)
+  ![mode1](../../images/mode1.png)
   
   
   #### K8s Reference Docs

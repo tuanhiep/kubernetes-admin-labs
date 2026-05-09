@@ -12,7 +12,7 @@ In this section, we will take a look at **Docker storage**.
 
 - There are two concepts comes into the docker, Storage drivers and Volume drivers plugins. 
 
-![class-1](../../images/class1.PNG)
+![class-1](../../images/class1.png)
 
 #### We will first discuss about Storage drivers.
 

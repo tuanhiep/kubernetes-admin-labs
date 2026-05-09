@@ -3,7 +3,7 @@
   
 In this section, we will take a look at configuring kubernetes schedulers.
 
-![ks](../../images/ks.PNG)
+![ks](../../images/ks.png)
 
 ## References
 - https://github.com/kubernetes/community/blob/master/contributors/devel/sig-scheduling/scheduler.md

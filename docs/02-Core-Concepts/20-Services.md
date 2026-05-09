@@ -6,7 +6,7 @@ In this section we will take a look at **`services`** in kubernetes
 ## Services
 - Kubernetes Services enables communication between various components within and outside of the application.
 
-  ![srv1](../../images/srv1.PNG)
+  ![srv1](../../images/srv1.png)
   
 #### Let's look at some other aspects of networking
 
@@ -16,18 +16,18 @@ In this section we will take a look at **`services`** in kubernetes
 
   - From the node (Able to reach the application as expected)
   
-    ![srv2](../../images/srv2.PNG)
+    ![srv2](../../images/srv2.png)
     
   - From outside world (This should be our expectation, without something in the middle it will not reach the application)
   
-    ![srv3](../../images/srv3.PNG)
+    ![srv3](../../images/srv3.png)
    
     
  ## Service Types
  
  #### There are 3 types of service types in kubernetes
  
-   ![srv-types](../../images/srv-types.PNG)
+   ![srv-types](../../images/srv-types.png)
  
  1. NodePort
     - Where the service makes an internal port accessible on a port on the NODE.
@@ -43,7 +43,7 @@ In this section we will take a look at **`services`** in kubernetes
          port: 80
          nodePort: 30008
       ```
-     ![srvnp](../../images/srvnp.PNG)
+     ![srvnp](../../images/srvnp.png)
       
       #### To connect the service to the pod
       ```
@@ -62,7 +62,7 @@ In this section we will take a look at **`services`** in kubernetes
          type: front-end
        ```
 
-    ![srvnp1](../../images/srvnp1.PNG)
+    ![srvnp1](../../images/srvnp1.png)
       
       #### To create the service
       ```
@@ -79,15 +79,15 @@ In this section we will take a look at **`services`** in kubernetes
       $ curl http://192.168.1.2:30008
       ```
       
-      ![srvnp2](../../images/srvnp2.PNG)
+      ![srvnp2](../../images/srvnp2.png)
 
       #### A service with multiple pods
       
-      ![srvnp3](../../images/srvnp3.PNG)
+      ![srvnp3](../../images/srvnp3.png)
       
       #### When Pods are distributed across multiple nodes
      
-      ![srvnp4](../../images/srvnp4.PNG)
+      ![srvnp4](../../images/srvnp4.png)
      
             
  1. ClusterIP

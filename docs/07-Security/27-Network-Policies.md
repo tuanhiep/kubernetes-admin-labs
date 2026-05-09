@@ -3,33 +3,33 @@
   
 #### Trafic flowing through a webserver serving frontend to users an app server serving backend API and a database server
 
-  ![traffic](../../images/traffic.PNG)
+  ![traffic](../../images/traffic.png)
   
 - There are two types of traffic
   - Ingress
   - Egress
   
-   ![ing1](../../images/ing1.PNG)
+   ![ing1](../../images/ing1.png)
   
-   ![ing2](../../images/ing2.PNG)
+   ![ing2](../../images/ing2.png)
   
 ## Network Security
 
-  ![nsec](../../images/nsec.PNG)
+  ![nsec](../../images/nsec.png)
   
 ## Network Policy
 
-  ![npol](../../images/npol.PNG)
+  ![npol](../../images/npol.png)
   
-  ![npol1](../../images/npol1.PNG)
+  ![npol1](../../images/npol1.png)
   
 ## Network Policy Selectors
   
-  ![npolsec](../../images/npolsec.PNG)
+  ![npolsec](../../images/npolsec.png)
   
 ## Network Policy Rules
 
-  ![npol2](../../images/npol2.PNG)
+  ![npol2](../../images/npol2.png)
   
 ## Create network policy
  
@@ -59,13 +59,13 @@
   $ kubectl create -f policy-definition.yaml
   ```
   
- ![npol3](../../images/npol3.PNG)
+ ![npol3](../../images/npol3.png)
  
- ![npol4](../../images/npol4.PNG)
+ ![npol4](../../images/npol4.png)
   
 ## Note
  
- ![note1](../../images/note1.PNG)
+ ![note1](../../images/note1.png)
  
 #### Additional lecture on [Developing Networking Policies](https://kodekloud.com/topic/developing-network-policies/)
 

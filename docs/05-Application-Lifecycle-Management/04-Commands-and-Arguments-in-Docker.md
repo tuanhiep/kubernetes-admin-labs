@@ -16,12 +16,12 @@ In this section, we will take a look at commands and arguments in docker
   $ docker ps -a
   ```
   
-  ![dc](../../images/dc.PNG)
+  ![dc](../../images/dc.png)
   
 #### Unlike virtual machines, containers are not meant to host operating system.
 - Containers are meant to run a specific task or process such as to host an instance of a webserver or application server or a database server etc.
 
-  ![ex](../../images/ex.PNG)
+  ![ex](../../images/ex.png)
   
   
 #### How do you specify a different command to start the container?
@@ -31,11 +31,11 @@ In this section, we will take a look at commands and arguments in docker
   ```
 - This way when the container starts it runs the sleep program, waits for 5 seconds and then exists. How do you make that change permanent?
   
-  ![sleep](../../images/sleep.PNG)
+  ![sleep](../../images/sleep.png)
   
 - There are different ways of specifying the command either the command simply as is in a shell form or in a JSON array format.
  
-  ![sleep1](../../images/sleep1.PNG)
+  ![sleep1](../../images/sleep1.png)
   
 - Now, build the docker image
   ```
@@ -46,7 +46,7 @@ In this section, we will take a look at commands and arguments in docker
   $ docker run ubuntu-sleeper
   ```
   
-  ![sleep2](../../images/sleep2.PNG)
+  ![sleep2](../../images/sleep2.png)
   
 ## Entrypoint Instruction
 - The entrypoint instruction is like the command instruction as in you can specify the program that will be run when the container starts and whatever you specify on the command line.

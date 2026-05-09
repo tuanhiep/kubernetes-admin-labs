@@ -5,7 +5,7 @@ In this section, we will take a look at secrets in kubernetes
 
 ## Web-Mysql Application
 
- ![web](../../images/web.PNG)
+ ![web](../../images/web.png)
  
 - One way is to move the app properties/envs into a configmap. But the configmap stores data into a plain text format. It is definitely not a right place to store a password.
   ```
@@ -18,7 +18,7 @@ In this section, we will take a look at secrets in kubernetes
     DB_User: root
     DB_Password: paswrd
   ```
-  ![web1](../../images/web1.PNG)
+  ![web1](../../images/web1.png)
   
 - Secrets are used to store sensitive information. They are similar to configmaps but they are stored in an encrypted format or a hashed format.
 
@@ -26,7 +26,7 @@ In this section, we will take a look at secrets in kubernetes
 - First, Create a secret
 - Second, Inject the secret into a pod.
   
-  ![sec](../../images/sec.PNG)
+  ![sec](../../images/sec.png)
   
 #### There are 2 ways of creating a secret
 - The Imperative way
@@ -34,7 +34,7 @@ In this section, we will take a look at secrets in kubernetes
   $ kubectl create secret generic app-secret --from-literal=DB_Host=mysql --from-literal=DB_User=root --from-literal=DB_Password=paswrd
   $ kubectl create secret generic app-secret --from-file=app_secret.properties
   ```
-  ![csi](../../images/csi.PNG)
+  ![csi](../../images/csi.png)
   
 - The Declarative way
   ```
@@ -59,11 +59,11 @@ In this section, we will take a look at secrets in kubernetes
   $ kubectl create -f secret-data.yaml
   ```
 
-  ![csd](../../images/csd.PNG)
+  ![csd](../../images/csd.png)
   
 ## Encode Secrets
 
-  ![enc](../../images/enc.PNG)
+  ![enc](../../images/enc.png)
   
 ## View Secrets
 - To view secrets
@@ -79,7 +79,7 @@ In this section, we will take a look at secrets in kubernetes
   $ kubectl get secret app-secret -o yaml
   ```
   
-  ![secv](../../images/secv.PNG)
+  ![secv](../../images/secv.png)
   
 ## Decode Secrets
 - To decode secrets
@@ -88,7 +88,7 @@ In this section, we will take a look at secrets in kubernetes
   $ echo -n "cm9vdA==" | base64 --decode
   $ echo -n "cGFzd3Jk" | base64 --decode
   ```
-  ![secd](../../images/secd.PNG)
+  ![secd](../../images/secd.png)
   
 ## Configuring secret with a pod
 - To inject a secret to a pod add a new property **`envFrom`** followed by **`secretRef`** name and then create the pod-definition
@@ -121,18 +121,18 @@ In this section, we will take a look at secrets in kubernetes
   ```
   $ kubectl create -f pod-definition.yaml
   ```
-  ![secp](../../images/secp.PNG)
+  ![secp](../../images/secp.png)
   
 #### There are other ways to inject secrets into pods.
 - You can inject as **`Single ENV variable`**
 - You can inject as whole secret as files in a **`Volume`**
 
-  ![seco](../../images/seco.PNG)
+  ![seco](../../images/seco.png)
   
 ## Secrets in pods as volume
 - Each attribute in the secret is created as a file with the value of the secret as its content.
   
-  ![secpv](../../images/secpv.PNG)
+  ![secpv](../../images/secpv.png)
   
 
 #### Additional Notes: [A Note on Secrets](https://kodekloud.com/topic/a-note-on-secrets/)

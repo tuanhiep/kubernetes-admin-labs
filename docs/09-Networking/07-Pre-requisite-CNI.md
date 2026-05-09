@@ -5,7 +5,7 @@
 In this section, we will take a look at **Pre-requisite Container Network Interface(CNI)**
 
 
-![net-7](../../images/net7.PNG)
+![net-7](../../images/net7.png)
 
 ## Third Party Network Plugin Providers
 

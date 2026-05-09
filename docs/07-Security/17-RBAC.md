@@ -47,7 +47,7 @@ In this section, we will take a look at RBAC
     name: developer
     apiGroup: rbac.authorization.k8s.io
   ```
-  ![rbac1](../../images/rbac1.PNG)
+  ![rbac1](../../images/rbac1.png)
   
 
 ## View RBAC
@@ -65,14 +65,14 @@ In this section, we will take a look at RBAC
   $ kubectl describe role developer
   ```
   
-  ![rbac2](../../images/rbac2.PNG)
+  ![rbac2](../../images/rbac2.png)
     
 - To describe rolebinding
   ```
   $ kubectl describe rolebinding devuser-developer-binding
   ```
   
-  ![rbac3](../../images/rbac3.PNG)
+  ![rbac3](../../images/rbac3.png)
   
 #### What if you being a user would like to see if you have access to a particular resource in the cluster.
 ## Check Access
@@ -90,7 +90,7 @@ In this section, we will take a look at RBAC
   $ kubectl auth can-i create pods --as dev-user --namespace test
   ```
   
-  ![rbac5](../../images/rbac5.PNG)
+  ![rbac5](../../images/rbac5.png)
   
 ## Resource Names
 - Note on resource names we just saw how you can provide access to users for resources like pods within the namespace.
@@ -105,7 +105,7 @@ In this section, we will take a look at RBAC
     verbs: ["get", "update", "create"]
     resourceNames: ["blue", "orange"]
   ```  
-  ![rbac4](../../images/rbac4.PNG)
+  ![rbac4](../../images/rbac4.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/reference/access-authn-authz/rbac/

@@ -7,16 +7,16 @@ In this section, we will take a look at **`Labels and Selectors`**
   
 #### Labels are properties attached to each item.
 
-  ![labels-ckc](../../images/labels-ckc.PNG)
+  ![labels-ckc](../../images/labels-ckc.png)
   
 #### Selectors help you to filter these items
  
-  ![sl](../../images/sl.PNG)
+  ![sl](../../images/sl.png)
   
 How are labels and selectors are used in kubernetes?
 - We have created different types of objects in kubernetes such as **`PODs`**, **`ReplicaSets`**, **`Deployments`** etc.
   
-  ![ls](../../images/ls.PNG)
+  ![ls](../../images/ls.png)
   
 How do you specify labels?
    ```
@@ -34,7 +34,7 @@ How do you specify labels?
        ports:
        - containerPort: 8080
    ```
- ![lpod](../../images/lpod.PNG)
+ ![lpod](../../images/lpod.png)
  
 Once the pod is created, to select the pod with labels run the below command
 ```
@@ -66,7 +66,7 @@ Kubernetes uses labels to connect different objects together
            image: simple-webapp   
    ```
 
-  ![lrs](../../images/lrs.PNG)
+  ![lrs](../../images/lrs.png)
 
 For services
  
@@ -83,7 +83,7 @@ For services
          port: 80
          targetPort: 9376 
        ```
-  ![lrs1](../../images/lrs1.PNG)
+  ![lrs1](../../images/lrs1.png)
   
 ## Annotations
 - While labels and selectors are used to group objects, annotations are used to record other details for informative purpose.
@@ -112,7 +112,7 @@ For services
         - name: simple-webapp
           image: simple-webapp   
     ```
-  ![annotations](../../images/annotations.PNG)
+  ![annotations](../../images/annotations.png)
 
 K8s Reference Docs:
 - https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/

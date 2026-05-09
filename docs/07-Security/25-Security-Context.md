@@ -9,12 +9,12 @@ In this section, we will take a look at security context
  $ docker run -cap-add MAC_ADMIN ubuntu
  ```
  
- ![csec](../../images/csec.PNG)
+ ![csec](../../images/csec.png)
  
 ## Kubernetes Security
 - You may choose to configure the security settings at a container level or at a pod level.
 
- ![ksec](../../images/ksec.PNG)
+ ![ksec](../../images/ksec.png)
 
 ## Security Context
 - To add security context on the container and a field called **`securityContext`** under the spec section.
@@ -31,7 +31,7 @@ In this section, we will take a look at security context
       image: ubuntu
       command: ["sleep", "3600"]
   ```
-  ![sxc1](../../images/sxc1.PNG)
+  ![sxc1](../../images/sxc1.png)
   
 - To set the same context at the container level, then move the whole section under container section.
   
@@ -48,7 +48,7 @@ In this section, we will take a look at security context
       securityContext:
         runAsUser: 1000
   ```
-  ![sxc2](../../images/sxc2.PNG)
+  ![sxc2](../../images/sxc2.png)
   
 - To add capabilities use the **`capabilities`** option
   ```
@@ -66,7 +66,7 @@ In this section, we will take a look at security context
         capabilities: 
           add: ["MAC_ADMIN"]
   ```
-  ![cap](../../images/cap.PNG)
+  ![cap](../../images/cap.png)
   
   
 ### K8s Reference Docs

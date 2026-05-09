@@ -6,11 +6,11 @@ In this section, we will take a look at **`Namespaces`**
 So far in this course we have created **`Objects`** such as **`PODs`**, **`Deployments`** and **`Services`** in our cluster. Whatever we have been doing we have been doing in a **`NAMESPACE`**.
 - This namespace is the **`default`** namespace in kubernetes. It is automatically created when kubernetes is setup initially.
 
-  ![ns](../../images/ns.PNG)
+  ![ns](../../images/ns.png)
  
 - You can create your own namespaces as well.
 
-  ![ns3](../../images/ns3.PNG)
+  ![ns3](../../images/ns3.png)
   
 - To list the pods in default namespace
   ```
@@ -20,7 +20,7 @@ So far in this course we have created **`Objects`** such as **`PODs`**, **`Deplo
   ```
   $ kubectl get pods --namespace=kube-system
   ```
-  ![ns8](../../images/ns8.PNG)
+  ![ns8](../../images/ns8.png)
   
 - Here we have a pod definition file, when we create a pod with pod-definition file, the pod is created in the default namespace.
 
@@ -44,7 +44,7 @@ spec:
   ```
   $ kubectl create -f pod-definition.yaml --namespace=dev
   ```
-  ![ns9](../../images/ns9.PNG)
+  ![ns9](../../images/ns9.png)
 
 - If you want to make sure that this pod gets you created in the **`dev`** env all the time, even if you don't specify in the command line, you can move the **`--namespace`** definition into the pod-definition file.
 ```
@@ -62,7 +62,7 @@ spec:
     image: nginx
  ```
   
-  ![ns10](../../images/ns10.PNG)
+  ![ns10](../../images/ns10.png)
   
 - To create a new namespace, create a namespace definition as shown below and then run **`kubectl create`**
 ```
@@ -79,7 +79,7 @@ metadata:
   ```
   $ kubectl create namespace dev
   ```
-  ![ns11](../../images/ns11.PNG)
+  ![ns11](../../images/ns11.png)
   
 - By default, we will be in a **`default`** namespace. To switch to a particular namespace permenently run the below command.
   ```
@@ -89,7 +89,7 @@ metadata:
   ```
   $ kubectl get pods --all-namespaces
   ```
-  ![ns12](../../images/ns12.PNG)
+  ![ns12](../../images/ns12.png)
   
 - To limit resources in a namespace, create a resource quota. To create one start with **`ResourceQuota`** definition file.
 ```
@@ -109,7 +109,7 @@ spec:
   ```
   $ kubectl create -f compute-quota.yaml
   ```
-  ![ns13](../../images/ns13.PNG)
+  ![ns13](../../images/ns13.png)
   
 K8s Reference Docs:
 - https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/

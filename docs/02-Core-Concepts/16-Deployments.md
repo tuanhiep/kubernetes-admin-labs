@@ -5,7 +5,7 @@ In this section, we will take a look at kubernetes deployments
 
 #### Deployment is a kubernetes object. 
   
- ![deployment](../../images/deployment.PNG)
+ ![deployment](../../images/deployment.png)
   
 #### How do we create deployment?
 
@@ -50,13 +50,13 @@ In this section, we will take a look at kubernetes deployments
   $ kubectl get pods
   ```
     
-  ![deployment1](../../images/deployment1.PNG)
+  ![deployment1](../../images/deployment1.png)
   
 - To see the all objects at once
   ```
   $ kubectl get all
   ```
-  ![deployment2](../../images/deployment2.PNG)
+  ![deployment2](../../images/deployment2.png)
   
 K8s Reference Docs:
 - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/

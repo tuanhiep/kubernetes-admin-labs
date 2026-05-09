@@ -17,7 +17,7 @@ In this section, we will take a look at commands and arguments in kubernetes
      command: ["sleep2.0"]
      args: ["10"]
   ```
-  ![args](../../images/args.PNG)
+  ![args](../../images/args.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/

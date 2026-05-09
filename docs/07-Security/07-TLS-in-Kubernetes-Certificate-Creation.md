@@ -21,7 +21,7 @@ In this section, we will take a look at TLS certificate creation in kubernetes
   $ openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt
   ```
  
- ![ca1](../../images/ca1.PNG)
+ ![ca1](../../images/ca1.png)
  
 ## Generating Client Certificates
 
@@ -40,7 +40,7 @@ In this section, we will take a look at TLS certificate creation in kubernetes
   $ openssl x509 -req -in admin.csr -CA ca.crt -CAkey ca.key -out admin.crt
   ```
   
-  ![ca2](../../images/ca2.PNG)
+  ![ca2](../../images/ca2.png)
   
 - Certificate with admin privilages
   ```
@@ -49,35 +49,35 @@ In this section, we will take a look at TLS certificate creation in kubernetes
   
 #### We follow the same procedure to generate client certificate for all other components that access the kube-apiserver.
 
-  ![crt1](../../images/crt1.PNG)
+  ![crt1](../../images/crt1.png)
   
-  ![crt2](../../images/crt2.PNG)
+  ![crt2](../../images/crt2.png)
   
-  ![crt3](../../images/crt3.PNG)
+  ![crt3](../../images/crt3.png)
    
-  ![crt4](../../images/crt4.PNG)
+  ![crt4](../../images/crt4.png)
   
 ## Generating Server Certificates
 
 ## ETCD Server certificate
 
-  ![etc1](../../images/etc1.PNG)
+  ![etc1](../../images/etc1.png)
   
-  ![etc2](../../images/etc2.PNG)
+  ![etc2](../../images/etc2.png)
   
 ## Kube-apiserver certificate
 
-  ![api1](../../images/api1.PNG)
+  ![api1](../../images/api1.png)
   
-  ![api2](../../images/api2.PNG)
+  ![api2](../../images/api2.png)
   
 ## Kubectl Nodes (Server Cert)
 
-   ![kctl1](../../images/kctl1.PNG)
+   ![kctl1](../../images/kctl1.png)
    
 ## Kubectl Nodes (Client Cert)
 
-   ![kctl2](../../images/kctl2.PNG)
+   ![kctl2](../../images/kctl2.png)
    
    
    

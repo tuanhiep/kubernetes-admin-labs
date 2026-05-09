@@ -4,12 +4,12 @@
 
 - IP Address Management in the Kubernetes Cluster
 
-![net-3](../../images/net3.PNG)
+![net-3](../../images/net3.png)
 
 
 - How weaveworks Manages IP addresses in the Kubernetes Cluster 
 
-![net-4](../../images/net4.PNG)
+![net-4](../../images/net4.png)
 
 
 ## References Docs

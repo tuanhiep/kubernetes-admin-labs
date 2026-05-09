@@ -5,12 +5,12 @@ In this section, we will take a look at backup and restore methods
 
 ## Backup Candidates
  
- ![bc](../../images/bc.PNG)
+ ![bc](../../images/bc.png)
  
 ## Resource Configuration
 - Imperative way
   
-  ![rci](../../images/rci.PNG)
+  ![rci](../../images/rci.png)
 
 - Declarative Way (Preferred approach)
   ```
@@ -26,11 +26,11 @@ In this section, we will take a look at backup and restore methods
     - name: nginx-container
       image: nginx
   ```
- ![rcd](../../images/rcd.PNG)
+ ![rcd](../../images/rcd.png)
  
 - A good practice is to store resource configurations on source code repositories like github.
 
-  ![rcd1](../../images/rcd1.PNG)
+  ![rcd1](../../images/rcd1.png)
 
 ## Backup - Resource Configs
 
@@ -40,12 +40,12 @@ In this section, we will take a look at backup and restore methods
 
 - There are many other resource groups that must be considered. There are tools like **`ARK`** or now called **`Velero`** by Heptio that can do this for you.
 
-  ![brc](../../images/brc.PNG)
+  ![brc](../../images/brc.png)
   
 ## Backup - ETCD
 - So, instead of backing up resources as before, you may choose to backup the ETCD cluster itself. 
   
-  ![be](../../images/be.PNG)
+  ![be](../../images/be.png)
   
 - You can take a snapshot of the etcd database by using **`etcdctl`** utility snapshot save command.
   ```
@@ -54,7 +54,7 @@ In this section, we will take a look at backup and restore methods
   ```
   $  ETCDCTL_API=3 etcdctl snapshot status snapshot.db
   ```
-  ![be1](../../images/be1.PNG)
+  ![be1](../../images/be1.png)
   
 ## Restore - ETCD
 - To restore etcd from the backup at later in time. First stop kube-apiserver service
@@ -72,7 +72,7 @@ In this section, we will take a look at backup and restore methods
   $ service etcd restart
   ```
   
-  ![er](../../images/er.PNG)
+  ![er](../../images/er.png)
   
 - Start the kube-apiserver
   ```
@@ -88,7 +88,7 @@ $ ETCDCTL_API=3 etcdctl \
   --key=/etc/kubernetes/pki/etcd/etcd-server.key
 ```
 
-  ![erest](../../images/erest.PNG)
+  ![erest](../../images/erest.png)
   
 #### K8s Reference Docs
 - https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/

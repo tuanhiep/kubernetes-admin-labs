@@ -10,12 +10,12 @@ In this section, we will take a look at **Storage Class**
 
 #### Static Provisioning
 
-![class-18](../../images/class18.PNG)
+![class-18](../../images/class18.png)
 
 
 #### Dynamic Provisioning
 
-![class-19](../../images/class19.PNG)
+![class-19](../../images/class19.png)
 
 - Now we have a Storage Class, So we no longer to define Persistent Volume. It will create automatically when a Storage Class is created. It's called **Dynamic Provisioning**. 
 
@@ -90,7 +90,7 @@ $ kubectl create -f pod-definition.yaml
 ```
 #### Provisioner
 
-![class-20](../../images/class20.PNG)
+![class-20](../../images/class20.png)
 
 #### Kubernetes Storage Class Reference Docs
 

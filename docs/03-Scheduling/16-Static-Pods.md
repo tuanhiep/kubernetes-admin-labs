@@ -10,33 +10,33 @@ In this section, we will take a look at Static Pods
 - The designated directory can be any directory on the host and the location of that directory is passed in to the kubelet as an option while running the service.
   - The option is named as **`--pod-manifest-path`**.
   
-  ![sp](../../images/sp.PNG)
+  ![sp](../../images/sp.png)
   
 ## Another way to configure static pod 
 - Instead of specifying the option directly in the **`kubelet.service`** file, you could provide a path to another config file using the config option, and define the directory path as staticPodPath in the file.
 
-  ![sp1](../../images/sp1.PNG)
+  ![sp1](../../images/sp1.png)
 
 ## View the static pods
 - To view the static pods
   ```
   $ docker ps
   ```
-  ![sp2](../../images/sp2.PNG)
+  ![sp2](../../images/sp2.png)
 
 #### The kubelet can create both kinds of pods - the static pods and the ones from the api server at the same time.
 
-  ![sp3](../../images/sp3.PNG)
+  ![sp3](../../images/sp3.png)
 
 ## Static Pods - Use Case
 
-  ![sp4](../../images/sp4.PNG)
+  ![sp4](../../images/sp4.png)
   
-  ![sp5](../../images/sp5.PNG)
+  ![sp5](../../images/sp5.png)
   
 ## Static Pods vs DaemonSets
 
-   ![spvsds](../../images/spvsds.PNG)
+   ![spvsds](../../images/spvsds.png)
   
 
 #### K8s Reference Docs

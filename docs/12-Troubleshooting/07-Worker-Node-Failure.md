@@ -14,13 +14,13 @@
     kubectl describe node worker-1
     ```
 
-    ![wrk](../../images/wrk.PNG)
+    ![wrk](../../images/wrk.png)
 
 
   - Check the possible **`CPU`** and **`MEMORY`**  using **`top`** and **`df -h`** 
 
  
-    ![mem](../../images/mem.PNG)
+    ![mem](../../images/mem.png)
 
 
   - Check the status and the logs of the **`kubelet`** for the possible issues.
@@ -32,7 +32,7 @@
     ```
     sudo journalctl -u kubelet
     ```
-    ![kublet](../../images/kublet.PNG)
+    ![kublet](../../images/kublet.png)
   
     
   - Check the **`kubelet`** Certificates, they are not expired, and in the right group and issued by the right CA.
@@ -41,6 +41,6 @@
     openssl x509 -in /var/lib/kubelet/worker-1.crt -text
     ```
 
-    ![cert](../../images/cert.PNG)
+    ![cert](../../images/cert.png)
 
 

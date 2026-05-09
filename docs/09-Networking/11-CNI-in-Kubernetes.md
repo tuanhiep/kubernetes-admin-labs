@@ -6,7 +6,7 @@ In this section, we will take a look at **Container Networking Interface (CNI) i
 
 ## Configuring CNI
 
-![net-1](../../images/net1.PNG)
+![net-1](../../images/net1.png)
 
 
 - Check the status of the Kubelet Service
@@ -41,7 +41,7 @@ ls /etc/cni/net.d
 
 ## Format of Configuration File  
 
-![net-2](../../images/net2.PNG)
+![net-2](../../images/net2.png)
 
 
 #### References Docs

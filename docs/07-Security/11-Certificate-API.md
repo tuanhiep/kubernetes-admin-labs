@@ -9,7 +9,7 @@ In this section, we will take a look at how to manage certificates and certifica
 #### Kubernetes has a built-in certificates API that can do this for you. 
 - With the certificate API, we now send a certificate signing request (CSR) directly to kubernetes through an API call.
    
-  ![csr](../../images/csr.PNG)
+  ![csr](../../images/csr.png)
    
 #### This certificate can then be extracted and shared with the user.
 - A user first creates a key
@@ -39,7 +39,7 @@ In this section, we will take a look at how to manage certificates and certifica
   $ cat jane.csr |base64 
   $ kubectl create -f jane.yaml
   ```
- ![csr1](../../images/csr1.PNG)
+ ![csr1](../../images/csr1.png)
   
 - To list the csr's
   ```
@@ -58,14 +58,14 @@ In this section, we will take a look at how to manage certificates and certifica
   $ echo "<certificate>" |base64 --decode
   ```
   
-  ![csr2](../../images/csr2.PNG)
+  ![csr2](../../images/csr2.png)
   
 #### All the certificate releated operations are carried out by the controller manager. 
 - If anyone has to sign the certificates they need the CA Servers, root certificate and private key. The controller manager configuration has two options where you can specify this.
 
-  ![csr3](../../images/csr3.PNG)
+  ![csr3](../../images/csr3.png)
   
-  ![csr4](../../images/csr4.PNG)
+  ![csr4](../../images/csr4.png)
   
   
 #### K8s Reference Docs

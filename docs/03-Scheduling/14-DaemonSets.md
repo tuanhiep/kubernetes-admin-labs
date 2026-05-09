@@ -5,15 +5,15 @@ In this section, we will take a look at DaemonSets.
 
 #### DaemonSets are like replicasets, as it helps in to deploy multiple instances of pod. But it runs one copy of your pod on each node in your cluster.
   
-  ![ds](../../images/ds.PNG)
+  ![ds](../../images/ds.png)
   
 ## DaemonSets - UseCases
 
-  ![ds-uc](../../images/ds-uc.PNG)
+  ![ds-uc](../../images/ds-uc.png)
   
-  ![ds-uc-kp](../../images/ds-uc-kp.PNG)
+  ![ds-uc-kp](../../images/ds-uc-kp.png)
   
-  ![ds-ucn](../../images/ds-ucn.PNG)
+  ![ds-ucn](../../images/ds-ucn.png)
   
 ## DaemonSets - Definition
 - Creating a DaemonSet is similar to the ReplicaSet creation process.
@@ -59,7 +59,7 @@ In this section, we will take a look at DaemonSets.
         - name: monitoring-agent
           image: monitoring-agent
   ```
-  ![dsd](../../images/dsd.PNG)
+  ![dsd](../../images/dsd.png)
   
 - To create a daemonset from a definition file
   ```
@@ -75,11 +75,11 @@ In this section, we will take a look at DaemonSets.
   ```
   $ kubectl describe daemonsets monitoring-daemon
   ```
-  ![ds1](../../images/ds1.PNG)
+  ![ds1](../../images/ds1.png)
   
 ## How DaemonSets Works
 
-  ![ds2](../../images/ds2.PNG)
+  ![ds2](../../images/ds2.png)
 
 #### K8s Reference Docs
 - https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#writing-a-daemonset-spec
