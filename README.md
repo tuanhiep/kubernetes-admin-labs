@@ -251,3 +251,10 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [01-Server for testing network policies](docs/17-tips-and-tricks/docs/01-server-for-testing-network-policies.md)
   - [02-Client-for-testing-network-things](docs/17-tips-and-tricks/docs/02-client--for-testing-network-things.md)
 
+## Validation
+
+Validate each lab by checking the target Kubernetes object, the expected cluster state, and the cleanup command.
+
+## Engineering Notes
+
+A strong Kubernetes lab repo should make prerequisites, context, namespace, and destructive commands explicit before asking the reader to run anything.
